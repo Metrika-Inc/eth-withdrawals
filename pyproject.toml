@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "eth_withdrawals"
+version = "0.1.0"
+description = "Data parsers for Ethereum withdrawals data."
+authors = ["Torran Green <torrangreen@hotmail.co.uk>"]
+readme = "README.md"
+packages = [{include = "eth_withdrawals"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^1.10.9"
+pendulum = "^2.1.2"
+jsonlines = "^3.1.0"
+hexbytes = "^0.3.1"
+web3 = "^6.5.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
