@@ -18,6 +18,10 @@ web3 = "^6.5.0"
 black = "^23.3.0"
 pre-commit = "^3.3.3"
 
+[tool.poetry.scripts]
+block-parser = "eth_withdrawals.block_parser:main"
+status-parser = "eth_withdrawals.validator_parser:main"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
